@@ -1,0 +1,42 @@
+,
+  {
+    "url": "assets/interior/pik/scene.gltf",
+    "url4": "assets/interior/pik/scene (44).glb",
+    "url3": "https://0.db-estate.cdn.pik-service.ru/layouts/24960/panorams/2EM7x_10_5-1_S_Z.gltf",
+    "url2": "https://0.db-estate.cdn.pik-service.ru/layouts/24972/panorams/2EL36_8_3-1_T_Z.gltf",
+    "size": {
+      "x": 0.012,
+      "y": 0.012,
+      "z": 0.012
+    },
+    "translate2": {
+      "x": 4,
+      "y": -0.1,
+      "z": 3
+    },
+    "translate": {
+      "x": 30,
+      "y": 1.50,
+      "z": 30.6
+    },
+    "isInterior": true,
+    "isAvatar": false,
+    "animated": false,
+    "animatedCycle": [
+      {
+        "animation": "idle",
+        "time": 2
+      },
+      {
+        "animation": "pointing"
+      },
+      {
+        "speed": 0.2,
+        "time": 20,
+        "animation": "walk"
+      },
+      {
+        "animation": "gesture"
+      }
+    ]
+  }

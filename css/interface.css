@@ -1,0 +1,65 @@
+.left-panel, .btn-center, .right-panel {
+    position: absolute;
+    bottom: 5%;
+}
+
+.left-panel {
+    left: 5%;
+}
+
+.btn-center {
+    left: 50%;
+}
+
+.right-panel {
+    right: 5%;
+}
+
+.btn {
+    height: 3rem;
+    width: 3rem;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+#voice-button {
+    border-radius: 50%;
+    background-color: #198754;
+    background-image: url('./../assets/interface/voice-off.svg');
+}
+
+#voice-button:focus {
+    background-image: url('./../assets/interface/voice-on.svg');
+}
+
+#plan {
+    background-image: url('./../assets/interface/flat-plan.svg');
+}
+
+#plan-3d {
+    background-image: url('./../assets/interface/flat-plan-3d.svg');
+}
+
+#walk {
+    background-image: url('./../assets/interface/walk.svg');
+}
+
+#play-button {
+    background-image: url('./../assets/interface/play.svg');
+}
+
+#play-button.active {
+    background-image: url('./../assets/interface/pause.svg');
+}
+
+#sound-button {
+    background-image: url('./../assets/interface/sound-off.svg');
+}
+
+#sound-button.active {
+    background-image: url('./../assets/interface/sound-on.svg');
+}
+
+#vr-button {
+    background-image: url('./../assets/interface/vr.svg');
+}

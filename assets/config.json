@@ -44,37 +44,5 @@
         "animation": "gesture"
       }
     ]
-  },
-  {
-    "url": "assets/interior/good_qualtiy/scene.gltf",
-    "size": {
-      "x": 1.5,
-      "y": 1.5,
-      "z": 1.5
-    },
-    "translate": {
-      "x": 30,
-      "y": 1.50,
-      "z": 30.6
-    },
-    "isAvatar": false,
-    "animated": false,
-    "animatedCycle": [
-      {
-        "animation": "idle",
-        "time": 2
-      },
-      {
-        "animation": "pointing"
-      },
-      {
-        "speed": 0.2,
-        "time": 20,
-        "animation": "walk"
-      },
-      {
-        "animation": "gesture"
-      }
-    ]
   }
 ]
