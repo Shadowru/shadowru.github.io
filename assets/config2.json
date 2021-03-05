@@ -1,0 +1,40 @@
+{
+  "environment": {
+    "sky": false,
+    "isDev": false
+  },
+  "generator": {
+    "url": "assets/generator/flat2.json",
+    "size": {
+      "x": 0.01,
+      "y": 0.01,
+      "z": 0.01
+    },
+    "translate": {
+      "x": -3,
+      "y": -0.02,
+      "z": -3.6
+    }
+  },
+  "avatar": {
+    "url": "assets/avatar/avatar.glb",
+    "size": {
+      "x": 0.01,
+      "y": 0.01,
+      "z": 0.01
+    },
+    "translate2": {
+      "x": 3,
+      "y": -0.02,
+      "z": 3.6
+    },
+    "translate": {
+      "x": 0.0,
+      "y": -0.02,
+      "z": 0.0
+    },
+    "animations": "assets/avatar/animations.json",
+    "expressions": "assets/avatar/expressions.json",
+    "isAvatar": true
+  }
+}

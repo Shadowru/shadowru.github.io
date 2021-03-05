@@ -24,11 +24,12 @@
 
 #voice-button {
     border-radius: 50%;
-    background-color: #198754;
+    background-color: #a0a0a0;
     background-image: url('./../assets/interface/voice-off.svg');
 }
 
-#voice-button:focus {
+#voice-button.active {
+    background-color: #198754;
     background-image: url('./../assets/interface/voice-on.svg');
 }
 
@@ -63,3 +64,4 @@
 #vr-button {
     background-image: url('./../assets/interface/vr.svg');
 }
+

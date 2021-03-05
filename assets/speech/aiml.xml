@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>*ПРИВЕТ*</pattern>
+        <pattern>*ЗДРАВСТВУЙ*</pattern>
+        <pattern>*КОЛБАСА*</pattern>
+        <template>
+            <random>
+                <li>
+                    Добрый день!
+                </li>
+                <li>
+                    Здравствуйте
+                </li>
+                <li>
+                    Приветик…
+                </li>
+            </random>
+            Меня зовут Планерикс, я ассистент по подбору квартир. Разрешите задать вам несколько вопросов?
+            <set name="topic">client-info</set>
+        </template>
+    </category>
+    <category>
+        <pattern>*ТЫ КТО*</pattern>
+        <pattern>*КТО ТЫ*</pattern>
+        <pattern>*ВЫ КТО*</pattern>
+        <pattern>*КТО ВЫ*</pattern>
+        <pattern>*РАССКАЖИ О СЕБЕ*</pattern>
+        <template>
+            Я Планерикс, помогаю клиентам подбирать квартиры. Вы позволите задать вам несколько вопросов?
+            <set name="topic">client-info</set>
+        </template>
+    </category>
+    <topic name="user-phone">
+        <category>
+            <pattern>*</pattern>
+            <that>НАЗОВИТЕ ВАШ КОНТАКТНЫЙ ТЕЛЕФОН</that>
+            <template>
+                Спасибо за информацию
+                <think>
+                    <set name="user-phone">
+                        <star/>
+                    </set>
+                </think>
+                Сейчас я работаю в демонстрационном режиме, поэтому часть нашего диалога мы пропустим.
+                Давайте я вам расскажу о квартире.
+                <set name="topic">appartment-info</set>
+            </template>
+        </category>
+    </topic>
+
+    <topic name="client-info">
+        <category>
+            <pattern>*</pattern>
+            <that>НАЗОВИТЕ ВАШЕ ИМЯ</that>
+            <template>
+                Очень приятно,
+                <set name="user-name">
+                    <star/>
+                </set>
+                Назовите ваш контактный телефон
+                <set name="topic">user-phone</set>
+            </template>
+        </category>
+
+        <category>
+            <pattern>*ДА*</pattern>
+            <pattern>*ХОРОШО*</pattern>
+            <pattern>*ДАВАЙ*</pattern>
+            <pattern>*ВАЛЯЙ*</pattern>
+            <template>
+                Назовите ваше имя
+            </template>
+        </category>
+
+        <category>
+            <pattern>*НЕТ*</pattern>
+            <template>
+                Пожалуйста, скажите да
+            </template>
+        </category>
+    </topic>
+    <topic name="appartment-info">
+        <category>
+            <pattern>*</pattern>
+            <template>
+                Пожалуйста, проходите.
+                Будьте как дома, задавайте вопросы.
+                Рада, что вы нашли время посмотреть наше предложение.
+            </template>
+        </category>
+    </topic>
+</aiml>
