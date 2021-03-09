@@ -92,3 +92,13 @@ body {
     color: aquamarine;
 }
 
+#progress {
+    position: absolute;
+    left: 0;
+    top: calc(50% + 80px);
+    margin-top: -1px;
+    height: 2px;
+    background-color: aquamarine;
+    transition: opacity 500ms ease-out;
+    will-change: opacity;
+}
