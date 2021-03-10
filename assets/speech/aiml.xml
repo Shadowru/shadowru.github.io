@@ -3,7 +3,7 @@
     <category>
         <pattern>*ПРИВЕТ*</pattern>
         <pattern>*ЗДРАВСТВУЙ*</pattern>
-        <pattern>*КОЛБАСА*</pattern>
+        <pattern>*ТЕСТ*</pattern>
         <template>
             <random>
                 <li>
