@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="bundle.js"></script>
+</head>
+<body>
+
+<a-scene loading-screen="dotsColor: red; backgroundColor: black" stats background="color: gray" light="defaultLightsEnabled: false">
+
+    <a-entity light="type: point; color: #CCC; intensity: 1.0" position="0.0 5.7500 0.0"></a-entity>
+
+    <a-entity camera look-controls wasd-controls="acceleration:20" fov="65" position="0.0 1.7500 0.0"></a-entity>
+    <a-entity room="json:./assets/generator/flat.json" scale="0.01 0.01 0.01" position="-2.481 0.0 -6.030"></a-entity>
+
+</a-scene>
+
+
+</body>
+</html>
